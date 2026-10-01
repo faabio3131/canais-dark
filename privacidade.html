@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Automação Canais Dark</title>
+<meta name="description" content="Política de Privacidade da aplicação Automação Canais Dark, incluindo o uso de dados das APIs do Google.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e4e4e4;
+    --accent: #1f5f4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141414;
+      --fg: #ececec;
+      --muted: #a0a0a0;
+      --rule: #2e2e2e;
+      --accent: #7fd1bb;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141414;
+    --fg: #ececec;
+    --muted: #a0a0a0;
+    --rule: #2e2e2e;
+    --accent: #7fd1bb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 16px 5rem;
+  }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0; font-size: .95rem; }
+  h2 { font-size: 1.12rem; margin: 2.4rem 0 .7rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin-bottom: .45rem; }
+  .callout {
+    border-left: 3px solid var(--accent);
+    padding: .1rem 0 .1rem 1rem;
+    margin: 1.25rem 0;
+    color: var(--fg);
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .92rem;
+  }
+  @media (max-width: 560px) {
+    .wrap { padding-top: 2.5rem; }
+    h1 { font-size: 1.45rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Política de Privacidade</h1>
+    <p class="sub">Aplicação: Automação Canais Dark · Última atualização: 30 de setembro de 2026</p>
+  </header>
+
+  <p>Esta política descreve como a aplicação <strong>Automação Canais Dark</strong> trata dados. A aplicação é operada por Fábio (F&amp;M Tecnologia) e é de uso estritamente interno: seu único usuário é o próprio operador, e ela atua exclusivamente sobre canais do YouTube de propriedade dele.</p>
+
+  <h2>1. Responsável</h2>
+  <p>Fábio — F&amp;M Tecnologia. Contato: <a href="mailto:faabio3131@gmail.com">faabio3131@gmail.com</a></p>
+
+  <h2>2. Dados acessados</h2>
+  <p>Ao autorizar a aplicação por OAuth, o operador concede acesso à sua própria conta do Google para as seguintes finalidades, e somente elas:</p>
+  <ul>
+    <li>Enviar vídeos ao canal do YouTube do próprio operador.</li>
+    <li>Definir e atualizar metadados desses vídeos: título, descrição, tags, categoria e visibilidade.</li>
+    <li>Consultar o estado dos envios realizados pela própria aplicação.</li>
+  </ul>
+  <p>A aplicação armazena as credenciais de acesso (tokens OAuth) necessárias para manter a autorização ativa. Esses tokens ficam guardados na instância privada da plataforma de automação utilizada pelo operador e não são compartilhados.</p>
+
+  <h2>3. Dados que a aplicação não acessa nem coleta</h2>
+  <ul>
+    <li>Não acessa canais, vídeos, contas ou quaisquer dados de terceiros.</li>
+    <li>Não possui cadastro, login ou base de usuários.</li>
+    <li>Não coleta dados de visitantes deste site: não há formulários, cookies de rastreamento, analytics ou pixels.</li>
+    <li>Não acessa contatos, e-mails, arquivos ou qualquer outro serviço do Google além da YouTube Data API.</li>
+  </ul>
+
+  <h2>4. Uso de dados das APIs do Google</h2>
+  <div class="callout">
+    <p>O uso e a transferência, pela Automação Canais Dark, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado (<em>Limited Use</em>).</p>
+  </div>
+  <p>Em termos práticos, isso significa que os dados obtidos por meio das APIs do Google são usados apenas para executar as funções descritas na seção 2; não são vendidos, não são usados para publicidade, não alimentam modelos de inteligência artificial e não são transferidos a terceiros, exceto quando estritamente necessário para operar o serviço, por exigência legal ou mediante autorização expressa do operador.</p>
+
+  <h2>5. Compartilhamento</h2>
+  <p>A aplicação não compartilha dados obtidos do Google com terceiros. A publicação dos vídeos ocorre no próprio YouTube, por meio da API oficial, no canal do operador.</p>
+
+  <h2>6. Retenção e exclusão</h2>
+  <p>Os tokens de acesso são mantidos enquanto a automação estiver em funcionamento e são descartados quando a autorização é revogada ou quando a aplicação é desativada. O operador pode revogar o acesso a qualquer momento em <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, o que encerra imediatamente a capacidade da aplicação de acessar a conta.</p>
+
+  <h2>7. Segurança</h2>
+  <p>As credenciais são armazenadas em ambiente de acesso restrito ao operador, protegido por autenticação. A aplicação não expõe endpoints públicos e não recebe requisições de terceiros.</p>
+
+  <h2>8. Conteúdo gerado por inteligência artificial</h2>
+  <p>Os roteiros e a narração dos vídeos publicados são produzidos com auxílio de ferramentas de inteligência artificial, a partir de temas definidos pelo operador. Isso não envolve tratamento de dados pessoais de terceiros.</p>
+
+  <h2>9. Alterações nesta política</h2>
+  <p>Eventuais alterações serão publicadas nesta mesma página, com atualização da data indicada no topo.</p>
+
+  <h2>10. Contato</h2>
+  <p>Para qualquer dúvida sobre esta política: <a href="mailto:faabio3131@gmail.com">faabio3131@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">← Voltar à página inicial</a>
+  </footer>
+
+</div>
+</body>
+</html>
