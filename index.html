@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automação Canais Dark</title>
+<meta name="description" content="Automação interna de produção e publicação de conteúdo motivacional para canais próprios no YouTube.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e4e4e4;
+    --accent: #1f5f4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141414;
+      --fg: #ececec;
+      --muted: #a0a0a0;
+      --rule: #2e2e2e;
+      --accent: #7fd1bb;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141414;
+    --fg: #ececec;
+    --muted: #a0a0a0;
+    --rule: #2e2e2e;
+    --accent: #7fd1bb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 16px 5rem;
+  }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .92rem;
+  }
+  @media (max-width: 560px) {
+    .wrap { padding-top: 2.5rem; }
+    h1 { font-size: 1.55rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Automação Canais Dark</h1>
+    <p class="sub">Automação interna de produção e publicação de conteúdo para canais próprios no YouTube.</p>
+  </header>
+
+  <p>Este site existe para identificar a aplicação <strong>Automação Canais Dark</strong>, um sistema de uso interno operado por Fábio (F&amp;M Tecnologia) para produzir e publicar vídeos curtos de conteúdo motivacional em canais do YouTube de sua propriedade.</p>
+
+  <h2>O que a aplicação faz</h2>
+  <p>A aplicação roda em um fluxo automatizado que, em horários programados, gera o roteiro de um vídeo curto, produz a narração em áudio, monta o vídeo e o publica no canal do próprio operador.</p>
+
+  <h2>Acesso a serviços do Google</h2>
+  <p>A aplicação utiliza a <strong>YouTube Data API v3</strong> exclusivamente para enviar vídeos e gerenciar os metadados desses vídeos (título, descrição, tags e visibilidade) no canal do próprio operador, mediante autorização por OAuth concedida por ele.</p>
+  <ul>
+    <li>Não acessa canais, contas ou dados de terceiros.</li>
+    <li>Não possui usuários além do próprio operador.</li>
+    <li>Não coleta dados de visitantes deste site.</li>
+  </ul>
+
+  <h2>Privacidade</h2>
+  <p>O tratamento de dados está descrito na <a href="privacidade.html">Política de Privacidade</a>.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas ou solicitações: <a href="mailto:faabio3131@gmail.com">faabio3131@gmail.com</a></p>
+
+  <footer>
+    Automação Canais Dark — uso interno, sem oferta a terceiros.
+  </footer>
+
+</div>
+</body>
+</html>
